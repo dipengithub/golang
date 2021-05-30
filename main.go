@@ -1,6 +1,8 @@
 package main
+//go mod init github.com/dipengithub/golang ==>command for package
 
 import (
+	"github.com/dipengithub/golang/helpers"
 	"fmt"
 	"log"
 )
@@ -8,6 +10,9 @@ import (
 func main() {
 	var y string
 	var v int
+    var myVar helpers.SomeType
+	myVar.TypeName="dipenddcc"
+	log.Println(myVar.TypeName)
 	v = 12
 
 	y, _ = dipen("world")
@@ -17,6 +22,8 @@ func main() {
 	log.Println(dipen("helowww"))
 	log.Println(v, y)
 	log.Println(dipen("helowww"))
+
+
 
 }
 
